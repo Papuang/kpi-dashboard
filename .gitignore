@@ -1,24 +1,23 @@
-# Logs
-logs
-*.log
+# Dependencies
+node_modules
+
+# Firebase
+firebase-config.json
+.firebase/
+database.rules.json
+storage.rules
+
+# Environment variables
+.env*
+
+# Build output
+dist
+build
+
+# Misc
+.DS_Store
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+.idx/*
 .vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
