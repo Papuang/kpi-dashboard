@@ -4,7 +4,7 @@ This is a strategic KPI (Key Performance Indicator) dashboard designed to give a
 
 ## Core Features:
 
-- Interactive KPI Cards: The main interface consists of cards, each representing a single KPI. These cards display the KPI's title, current value, target value, and the change over a period. They also include a tooltip explaining the KPI's formula.
+- Interactive KPI Cards: The main interface consists of cards, each representing a single KPI. These cards display the KPI's title, current value, target value, and the change over a period. They also include a tooltip explaining the KPI's formula and warnings for data anomalies.
 - Historical Data Modal: When you click on a KPI card, a modal window appears, showing a historical chart of that KPI's performance over time. This chart, rendered using Recharts, also includes a forecast line to predict future trends.
 - AI-Generated Reports: The application has a feature to generate an AI-powered report based on selected KPIs. This is done using the Gemini API, and the report is displayed in a modal using react-markdown.
 
