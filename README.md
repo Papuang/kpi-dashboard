@@ -1,16 +1,27 @@
-# React + Vite
+# Adarga KPI Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a strategic KPI (Key Performance Indicator) dashboard designed to give a comprehensive overview of a company's performance, using Adarga as a case-study. The dashboard is organized into three main categories: Buyers, Users, and Investors.
 
-Currently, two official plugins are available:
+## Core Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive KPI Cards: The main interface consists of cards, each representing a single KPI. These cards display the KPI's title, current value, target value, and the change over a period. They also include a tooltip explaining the KPI's formula and warnings for data anomalies.
+- Historical Data Modal: When you click on a KPI card, a modal window appears, showing a historical chart of that KPI's performance over time. This chart, rendered using Recharts, also includes a forecast line to predict future trends.
+- AI-Generated Reports: The application has a feature to generate an AI-powered report based on selected KPIs. This is done using the Gemini API, and the report is displayed in a modal using react-markdown.
 
-## React Compiler
+## Technology Stack:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend: The application is built with a modern frontend stack:
+- **React**: The core UI library.
+- **Vite**: A fast build tool for web development.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Recharts**: For creating interactive charts.
+- **react-markdown**: To display the AI-generated reports.
 
-## Expanding the ESLint configuration
+Backend:
+- **Firebase**: The project is set up to eventually use Firebase for features like user authentication, data storage, and backend functions.
+- **Google Gemini**: The application is already using the Gemini API for its AI-powered reporting feature.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Data:
+
+- Currently, the application uses mock data to populate the dashboard.
+- There are plans to integrate a live Firebase backend to fetch real-time data.
