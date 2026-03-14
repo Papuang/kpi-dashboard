@@ -8,7 +8,7 @@ database.rules.json
 storage.rules
 
 # Environment variables
-.env*
+.env
 
 # Build output
 dist
@@ -21,4 +21,3 @@ yarn-debug.log*
 yarn-error.log*
 .idx/*
 .vscode/*
-.env
